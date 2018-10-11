@@ -8,15 +8,14 @@ body,td,th,p{
 	line-height: 1.5;
 }
 body {
-  min-width: 420px;
+  min-width: 450px;
 	background-color: #fdfdfd;
 	margin: 0;
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-size: 14pt;
   color: #333;
-  border-radius: 10px;
 }
 a {
 	color: orange;
@@ -45,7 +44,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   color: #aaa;
   font-size: 8pt;
   letter-spacing: 1px;
-  padding: 25px;
+  padding: 2%;
   text-align: center;
   text-transform: uppercase;
 }
@@ -54,10 +53,9 @@ nav {
   height: 80px;
   background-color: #252831;
   text-align:center;
-  padding: 20px 0px 5px;
 }
 nav h1 {
-  margin:auto;
+  padding: 2%;
 }
 nav h1 a {
   color: #fff;
@@ -68,12 +66,9 @@ nav h1 a {
   padding: 10px;
 }
 #breadcrumb {
-    padding: 1px 60px 1px;
     list-style: none;
     background-color: #eee;
-    font-size: 24pt;
     margin: 0;
-    width: 100%;
 }
 
 /* Display list items side by side */
@@ -192,16 +187,14 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 .inside header {
-  position: fixed;
+  display: block;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
 .inside #map-container {
+  display: block;
   background: blue none repeat scroll 0 0;
-  width: 100%;
-  height: 25%;
-  position: relative;
   right: 0;
   top: 80px;
 }
@@ -212,7 +205,6 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   width: 100%;
-  position: fixed;
 }
 #restaurant-name {
   color: #f18200;
@@ -246,11 +238,9 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 120px 40px 30px;
+  padding: 20px 40px 30px;
 }
-#reviews-container {
-  padding: 30px 40px 80px;
-}
+
 #reviews-container h2 {
   color: #f58500;
   font-size: 24pt;
@@ -265,7 +255,8 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
+  border-radius: 10px;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
@@ -283,9 +274,12 @@ nav h1 a {
 
 /* ===== RESPONSIVE STYLES ===== */
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 600px) {
   
   h2 {
     display: none;
+  }
+  ul li {
+    font-size: 18pt;
   }
 }
