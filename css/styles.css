@@ -50,12 +50,13 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 /* ====================== Navigation ====================== */
 nav {
-  height: 80px;
+  height: 120px;
   background-color: #252831;
+  border-bottom: 2px solid #ccc;
   text-align:center;
 }
 nav h1 {
-  padding: 2%;
+  padding: 30px 1px;
 }
 nav h1 a {
   color: #fff;
@@ -152,6 +153,7 @@ nav h1 a {
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
+  border: 2px solid #ccc;
   display: block;
   margin: 0;
   max-width: 100%;
@@ -206,6 +208,9 @@ nav h1 a {
   bottom: 0;
   width: 100%;
 }
+.restaurant-figure {
+  margin-left: 0;
+}
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
@@ -217,7 +222,8 @@ nav h1 a {
   line-height: 1.1;
 }
 #restaurant-img {
-	width: 90%;
+  width: 90%;
+  border: 2px solid #ccc;
 }
 #restaurant-address {
   font-size: 12pt;
@@ -225,6 +231,7 @@ nav h1 a {
 }
 #restaurant-cuisine {
   background-color: #333;
+  border: 2px solid #ccc;
   color: #ddd;
   font-size: 12pt;
   font-weight: 300;
@@ -255,7 +262,7 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-  border: 2px solid #f3f3f3;
+  border: 2px solid #ccc;
   border-radius: 10px;
   display: block;
   list-style-type: none;
@@ -273,6 +280,21 @@ nav h1 a {
 }
 
 /* ===== RESPONSIVE STYLES ===== */
+
+@media only screen and (min-width: 900px) {
+  #restaurant-container {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .restaurant-figure {
+    width: 50%;
+  }
+  .restaurant-info {
+    margin-top: 100px;
+    width: 40%;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   
