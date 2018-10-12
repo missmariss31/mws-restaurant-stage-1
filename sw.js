@@ -10,12 +10,14 @@ var cachedFiles = [
   '/data/restaurants.json',
   '/js/main.js',
   '/js/restaurant_info.js',
-  '/js/dbhelper.js' 
+  '/js/dbhelper.js',
+  'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
+  'https://api.tiles.mapbox.com/v4/mapbox.streets/12/1204/1540.jpg70?access_token=pk.eyJ1IjoibXNjaG11Y2tlcjMxIiwiYSI6ImNqbXVyZmQzdTMwMWEza21sc25zMm5lcngifQ.87ivMGNm3z_8SVlpNuF0Zw'
 ];
 
 // Add all restaurant.html pages to cachedFiles
-for (i=0;i<10;i++) {
-  cachedFiles.push(`restaurant.html?=${i}`);
+for (i=1;i<11;i++) {
+  cachedFiles.push(`restaurant.html?id=${i}`);
 }
 
 // cache all files
