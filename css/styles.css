@@ -8,7 +8,7 @@ body,td,th,p{
 	line-height: 1.5;
 }
 body {
-  min-width: 450px;
+  min-width: 300px;
 	background-color: #fdfdfd;
 	margin: 0;
 }
@@ -138,7 +138,7 @@ nav h1 a {
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
-  padding: 30px 15px 60px;
+  padding: 0;
   text-align: center;
 }
 #restaurants-list li {
@@ -147,8 +147,8 @@ nav h1 a {
   font-family: Arial,sans-serif;
   margin: 15px;
   min-height: 380px;
-  padding: 20px 30px 25px;
-  text-align: left;
+  padding: 20px 30px 20px;
+  text-align: center;
   width: 270px;
 }
 #restaurants-list .restaurant-img {
